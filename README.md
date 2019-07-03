@@ -4,7 +4,7 @@ Mood Calendar App
 
 Mood Calendar App is an application for settig up your daily mood status. It was done with HTML, SCSS, Javascript and React.
 
-The proyect structure is:
+The project structure is:
 
 ├── .git
 
