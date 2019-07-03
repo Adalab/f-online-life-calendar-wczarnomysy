@@ -8,29 +8,23 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      newDate: new Date (),
+      newDate: new Date(),
       newMood: "",
       newMessage: "",
-      dateList:[]
+      dateList: []
     };
-  this.handleDate=this.handleDate.bind(this);
-  this.handleMood=this.handleMood.bind(this);
-  this.handleMessage=this.handleMessage.bind(this);
-  this.handleMoodData=this.handleMoodData.bind(this);
-  this.saveData=this.saveData.bind(this);
-  this.resetData=this.resetData.bind(this);
+    this.handleDate = this.handleDate.bind(this);
+    this.handleMood = this.handleMood.bind(this);
+    this.handleMessage = this.handleMessage.bind(this);
+    this.handleMoodData = this.handleMoodData.bind(this);
+    this.saveData = this.saveData.bind(this);
+    this.resetData = this.resetData.bind(this);
   }
 
   componentDidMount() {
     const savedData = JSON.parse(localStorage.getItem("SavedDataArr"));
     const savedCalendar = savedData ? savedData : [];
-    this.setState({ dataList: savedCalendar });
-    console.log(savedData);
-  }
-  
-
-  componentDidUpdate() {
-    this.saveData()
+    this.setState({ dateList: savedCalendar });
   }
 
   handleDate(date) {
@@ -53,29 +47,31 @@ class App extends React.Component {
     });
   }
 
-  handleMoodData () {
+  handleMoodData() {
     const moodData = {
-    date: this.state.newDate,
-    mood: this.state.newMood,
-    message: this.state.newMessage
-    }
-    this.setState(prevState=>({
-      dateList: [...prevState.dateList, moodData]
+      date: this.state.newDate,
+      mood: this.state.newMood,
+      message: this.state.newMessage
+    };
+    const dateList = [...this.state.dateList, moodData];
+    this.setState(prevState => ({
+      dateList
     }));
+    this.saveData(dateList);
   }
 
-  saveData () {
-    localStorage.setItem('savedDataArr', JSON.stringify(this.state.dateList));
+  saveData(dateList) {
+    localStorage.setItem("savedDataArr", JSON.stringify(dateList));
+    console.log(this.state);
   }
 
-  resetData () {
+  resetData() {
     this.setState({
-      newDate:"",
-      newMood:"",
-      newMessage:""
+      newDate: "",
+      newMood: "",
+      newMessage: ""
     });
   }
-
 
   render() {
     return (
