@@ -1,6 +1,6 @@
-# Mood Calendar App
+# Mood Calendar
 
-_It is a Single Page Application created with React. Mood Callendar App is used for setting a daily mood status. We start by filling a form, which includes selecting a date and if it was a good or bad day. In case of a good day we can also add a positive comment and after selecting 'Save'a happy face icon appears on the calendar. In case of the bad day a sad face icon appers on the calendar. All the information: date, mood status and comment after selecting 'Save' is stored in the local storage, so we do not lose it in case of any electricity problems._
+_It is a Single Page Application created with React. Mood Calendar is used for setting a daily mood status. We start by filling a form, which includes selecting a date and if it was a good or bad day. In case of the good day we can also add a positive comment and after selecting 'Save' a happy face icon appears in the calendar. In case of the bad day after selecting 'Save' a sad face icon appears in the calendar. All the information: date, mood status and comment, is stored in the local storage, so we do not lose it in case of any electrical problems._
 
 ## Project Structure 📄
 
