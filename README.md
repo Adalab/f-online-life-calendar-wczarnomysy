@@ -1,29 +1,43 @@
 # Mood Calendar App
 
-![Calendar](https://cdn.pixabay.com/photo/2017/06/10/06/39/calender-2389150_960_720.png)
+_It is a Single Page Application created with React. Mood Callendar App is used for setting a daily mood status. We start by filling a form, which includes selecting a date and if it was a good or bad day. In case of a good day we can also add a positive comment and after selecting 'Save'a happy face icon appears on the calendar. In case of the bad day a sad face icon appers on the calendar. All the information: date, mood status and comment after selecting 'Save' is stored in the local storage, so we do not lose it in case of any electricity problems._
 
-Mood Calendar App is an application for settig up your daily mood status. It was done with HTML, SCSS, Javascript and React.
-The project uses React Router, which helps to change between the main page "Home", which has a calendar list with your daily mood status and a button to go to the edit part "Form". In the "Form" page it is possible to add a daily mood status, which will apppear in the main page. It is also possible to add a comment only in case of a happy day. All the information: date, mood and comment are stored in the local storage.
-
-## The project structure is:
+## Project Structure 📄
 
 ```
 /
-`-_src
-    |-components
-        |-Form
-            |-Form.js
-	    |-Form.scss
-        |-Home
-	    |-Home.js
-	    |-Home.scss
-        |-App.js
-	|-App.scss
-	|-index.js
-	|-index.scss
-	
+`-_src 
+    |-components 
+        |-Form 
+        |-Home 
+    |-App
+    |-index  
 ```
+    
+## Starting 🚀
 
-**Enjoy!**
+_These instructions will allow you to obtain a copy of the project on your local machine for development and testing purposes._
+
+1. Install the new version of Node: [Download](https://nodejs.org/es/download/).
+
+2. Clone the repository: `$ git clone https://github.com/wczarnomysy/mood-calendar.git`. You can also use the Fork option available in the GitHub Project Page. In the case of forking the project, the copy of the project will appear directly in your GitHub Profile and you will be able to start working with it right away.
+
+3. Install dependencies to the cloned project: `$ npm install`.
+
+4. To launch the project and view it in the browser use: `$ npm start`.
+
+## Built with 🛠️
+
+### Dependencies
+
+- [prop-types 15.7.2](https://www.npmjs.com/package/prop-types)
+- [react 16.8.6](https://www.npmjs.com/package/react)
+- [react-dom 16.8.6](https://www.npmjs.com/package/react-dom)
+- [react-scripts 3.0.1](https://www.npmjs.com/package/react-scripts)
+
+## Author ✒️
+
+Weronika Czarnomysy: [wczarnomysy](https://www.linkedin.com/in/weronikaczarnomysy)
+
                         
                  
